@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Rambla', sans-serif;
+}
+
+/*HEADER*/
+
+body header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .7);
+    position: relative;
+}
+
+body header .logo{
+    width: 50%;
+    height: 100%;
+    margin: 5% 0 2% 5%;
+}
+
+body header .logo img{
+    width: 70%;
+    height: 100%;
+}
+
+body header .icon-menu{
+    width: 10%;
+    height: 100%;
+    margin: 0 5% 0 0;
+    font-size: 2rem;
+}
+body header .icon-menu .bt-menu:hover{
+    cursor: pointer;
+    background-color: (0,0,0,0.3);
+}
+body header .menu{
+    position: absolute;
+    margin-left: -70%;
+}
+body header .menuOpen{
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+
+body header .menu ul li{
+    width: 100%;
+    display:block;
+    border-bottom: thin solid white;
+    background-color: #fee645;
+    font-weight: bolder;
+    padding: 5%;
+}
+
+body header .menu ul li a{
+    width: 100%;
+    text-decoration: none;
+    color:black;
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+body header .menu ul li:hover{
+    background-color: #2e2e2c;
+}
+body header .menu ul li a:hover{
+    color:white;
+}
+
+body header .profile-picture{
+    width: 15%;
+    height: 80%;
+}
+body header .profile-picture img{
+    width: 100%;
+    height: 100%;
+}
+/*HOME*/
+
+body .home{
+    width: 100%;
+    height: 90vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-areas: "today-budget today-expenses"
+                         "daily daily"
+                         "total-savings total-savings";
+}
+/*TOP BUTTONS*/
+
+body .home .today-budget{
+    
+    grid-area: today-budget;
+    border-radius: 10px;
+    margin: 7% 2.5% 3% 5%;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+body .home .today-budget .input-one{
+    margin: 5%;
+    height: 2rem;
+    border-radius: 5px;
+}
+body .home .today-expenses .result-today-expenses{
+    background: white;
+    margin: 5%;
+    height: 2rem;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+body .home .today-expenses{
+    grid-area: today-expenses;
+    border-radius: 10px;
+    margin: 7% 5% 3% 2.5%;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+body .home .daily{
+    grid-area: daily;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+body .home .total-savings{
+    
+    grid-area: total-savings;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #2e2e2c;
+    color:white;
+}
+
+body .home .daily{
+   
+}
+body .home .daily p{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    display: inline-block;
+
+}
+
+body .home .daily #createSelector{
+    cursor: pointer;
+    margin: 0 5%;
+
+   
+}
+body .home .daily #createSelector .createSelector{
+    font-size: 5rem;   
+    box-shadow: 0px 5px 5px 0px 
+            rgba(0, 0, 0, .7); 
+    
+}
+
+body .home .daily .selector-wraper {
+    
+    margin: 0 3%;
+    display: none;
+   
+}
+body .home .daily #selector .selectorBox {
+    width: 30vw;
+    height: 6vh;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#F2CF3C;    
+    box-shadow: 0px 5px 15px 0px 
+            rgba(0, 0, 0,1);
+    border-radius: 8px;
+    margin: 5% 5% 2% 0;
+}
+body .home .daily #input1 #category {
+    width: 30vw;
+    height: 6vh;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#F2CF3C;    
+    box-shadow: 0px 5px 15px 0px 
+            rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    margin: 5% 0% 2% 15%;
+}
+
+.home .daily #add1 {
+     margin: 2% 0 10% 10%;
+     cursor: pointer;
+     
+}
+
+.home .daily #add1 #icon2 {
+    font-size: 2rem;
+      box-shadow: 0px 5px 15px 0px 
+            rgba(0, 0, 0, 1);
+            margin: 10% 0 45% 0;
+}
+
+.home .daily .print2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 6vh;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#F2CF3C;    
+    box-shadow: 0px 5px 15px 0px 
+            rgba(0, 0, 0, 1);
+    border-radius: 8px;
+   
+
+}
+
+.home .daily .print2 .monto {
+    
+    color: black;
+    font-weight: bolder;
+}
+body .home .total-savings{
+    grid-area: total-savings;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    text-align: left;
+}
+body .home .total-savings p{
+    display: inline;
+    margin:0 10%;
+}
+body .home .total-savings .result-today-savings{
+    width: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 2% 7%;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+/*OBJECTIVES*/
+
+
+body .Objectives{
+    width: 100%;
+    height: 90vh;
+    display:none;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-areas: "title-Objectives title-Objectives"
+                         "items items"
+                         "items items"
+                         "items items";
+}
+
+body .Objectives .title-Objectives{
+    grid-area: title-Objectives;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    text-align: center;
+    /*display: block;*/
+}
+body .Objectives .items{
+    grid-area: items;
+    background-color: #2e2e2c;
+    color:white;
+    padding: 5%;
+    font-size: 1rem;
+    margin: 3%;
+    border-radius: 10px;
+    height: 80vh;
+}
+
+

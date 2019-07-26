@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rambla&display=swap" rel="stylesheet">
+   
+    <title>I love fin</title>
+</head>
+<body>
+    <header>
+            <figure class="logo">
+                <img src="./Imagenes/logo.PNG" id="logoILovefin">
+            </figure>
+            
+            <figure class="profile-picture">
+                <img src="./Imagenes/user.PNG">
+            </figure>
+
+            <figure class="icon-menu">
+                <a class="bt-menu" id="bt-menu"><i class="fas fa-bars"></i></a>
+            </figure>
+            
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Análisis</a></li>
+                    <li><a href="#" id="opcionObjectives">Objetivos</a></li>        
+                    <li><a href="#">Hábitos</a></li>         
+                </ul>
+            </nav>
+    </header>
+
+    <section class="home" id="pantallaHome">
+        <main class="today-budget">
+            <p>Destinado para hoy</p>
+            <input type="number" id="input-one" class="input-one" placeholder="$">
+        </main>
+
+        <main class="today-expenses">
+            <p>Gastos</p>
+            <p class="result-today-expenses">Suma</p>
+        </main>
+
+        <main class="daily">
+
+            <p class="movements-p">Movimientos</p>
+            <a id="createSelector" class="createSelector"><i class="fas fa-plus-circle"></i></a>  <!--AQUI SE CREA EL SELECTOR-->
+            <div id="selector-wraper" class="selector-wraper">
+                    <div id="selector"></div>
+                    <div id="input1"></div>
+                    <a id="add1"></a>
+            </div>
+            
+            <div id="herePrint" class="herePrint">
+
+            </div>
+        
+
+        </main>
+       
+        <main class="total-savings">
+            <p>Total de ahorro</p>
+            <p class="result-today-savings">Resta</p>
+        </main>
+    </section>
+
+    <section class="budget">
+            <main class="monthly-budget">
+    
+            </main>
+            <main class="period">
+    
+            </main>
+            <main class="Categories">
+                <div class="fixed-expenses"></div>
+                <div class="necessary-variables"></div>
+                <div class="surperfluos-expenses"></div>
+                <div class="savings"></div>
+    
+            </main>
+            <main class="monthly-total">
+    
+            </main>
+            <main class="monthly-savings">
+    
+            </main>
+        </section>
+    
+
+        <section class="Objectives" id="Objectives">
+            <p class="title-Objectives">MIS OBJETIVOS</p>
+            <main class="items">
+                
+            </main>
+        </section>
+
+
+        <script src="https://kit.fontawesome.com/4f820322b0.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
